@@ -148,7 +148,10 @@ for eachColour in colourList:
 
 wn.mainloop()
 #+end_src 
-
+- As always, this Trinket may be handy to use to experiment with...
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/5b19163d53" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 * Assessment
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

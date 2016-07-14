@@ -113,7 +113,10 @@ for n in range(1,11):
     
 wn.mainloop()
 #+end_src 
-
+- You can experiment a bit with this Trinket, if that's helpful:
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/cd17ac4bca" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - What new ideas are used here? A characteristic of a good developer is being able to apply ideas they've learnt in new situations. Could you use the ideas in the program above to make this pattern (there are 50 turtle stamps here and each is 5 units in front of the one before it), or one like it:
 [[./img/w6_2.png]]
 
