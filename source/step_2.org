@@ -109,7 +109,10 @@ wn.mainloop()            # Wait until the window is closed.
 - Click File -> Save As, and save this file on your H: Drive, as "**shapes.py**". 
 - **Tip:** If you call this "turtle.py", your code won't work!
 - Run your program by hitting the F5 key on the keyboard, or by choosing Run -> Run Module from the menu at the top of the window. 
-
+- Alternatively, you can just use this code window here:
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/cf0c9e13a4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Explain it
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -183,13 +186,9 @@ print("That'll be a " + shape_name + ".")
 :HTML_CONTAINER_CLASS: badge
 :END:
 - Modify the program so that...
-
-
 - *Silver:* the user can also choose how thick their lines will be.
 - *Gold:* If the user enters a number below 3 or above 20, they should be told not to be so careless in future before drawing the shape anyway. 
 - *Platinum:* Building on the silver task, also change the code so that each new line drawn is thicker than the last, like this:
 [[./img/w2_gold.png]]
 
-
 - Upload your code to [[https://www.bournetolearn.com][BourneToLearn]].
-[[./index.html][Back to homepage]]
