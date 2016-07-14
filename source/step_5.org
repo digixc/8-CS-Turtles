@@ -112,6 +112,10 @@ print(someColours)
 someColours.pop(1)
 print(someColours)
 #+end_src 
+- You can type the commands into this Trinket, if you find it easier...
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/b3e5f22215?runOption=console" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code

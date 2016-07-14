@@ -108,14 +108,13 @@ Repeat the following 8 times:
 
 - We can teach the computer how to draw squares (or anything else for that matter) by writing a function which contains the steps needed to perform that task.
 - We're going to start by creating a function called drawsquare().
-
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
 
 - Start a new Python program, and save it straight away. Call it "**Pattern.py**".
-- Start with the usual code to set Python up for drawing graphics...
+- You'll spot some of the usual code we use to set Python up for drawing graphics, but with some new code in town...
 
 #+BEGIN_EXAMPLE
 import turtle
@@ -138,14 +137,17 @@ for myMoves in range(8):
         
 wn.mainloop()
 #+END_EXAMPLE
-
+- The =def= line and those below it describe to Python some instructions that we'd like carried out any time we want. We're calling these instructions =drawsquare=; this is our *function*. 
+- Use the code trinket below to experiment with the code a little, but be aware that you'll need to copy and paste your code somewhere else if you want to save it.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/5ef1bc1b9e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
 - When you run this, it'll draw the pattern for you. 
-- The def drawsquare(): line and the 3 lines that come after it are where we have declared (created) our function. We've said to Python that any time in the future when we write **drawsquare()**, we want a square drawing. 
-- Change the 8 in the line: **for myMoves in range(8)** to something else.
-- Change the 45 in **tess.left(45)** to something else. 
+- The =def drawsquare():= line and the 3 lines that come after it are where we have declared (created) our function. We've said to Python that any time in the future when we write =drawsquare()=, we want a square drawing. 
+- Change the 8 in the line: =for myMoves in range(8)= to something else.
+- Change the 45 in =tess.left(45)= to something else. 
 - Can you manipulate the code to draw this shape?
 [[./img/pattern2.png]]
-
 ** Badge It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
@@ -160,8 +162,7 @@ wn.mainloop()
     - A pattern with 180 squares would need 2 degrees between each. 
     - Is there a relationship between the two numbers?
 [[./img/pattern3.png]]
-- *Platinum:* You should now have a function for drawing a square, and one for a triangle. Write another function called squiangle() that when called (used) draws a square, then a triangle by calling those functions.
+- *Platinum:* You should now have a function for drawing a square, and one for a triangle. Write another function called =sqiangle()= that when called (used) draws a square, then a triangle by calling those functions.
 
 
 - Upload your code to [[https://www.bournetolearn.com][BourneToLearn.com]] 
-[[./index.html][Back to homepage]]
