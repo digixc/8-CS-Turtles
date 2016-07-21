@@ -173,9 +173,9 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">yourName</span>=<span style="color: #2aa198;">'Jane'</span>
-<span style="color: #268bd2;">yourAge</span>=50
-<span style="color: #268bd2;">likeCrisps</span>=<span style="color: #268bd2; font-weight: bold;">True</span>
+<pre class="src src-python"><span style="color: #268bd2;">yourName</span> = <span style="color: #2aa198;">'Jane'</span>
+<span style="color: #268bd2;">yourAge</span> = 12
+<span style="color: #268bd2;">likeCrisps</span> = <span style="color: #268bd2; font-weight: bold;">True</span>
 </pre>
 </div>
 
@@ -187,7 +187,7 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">someColours</span>=[<span style="color: #2aa198;">'Red'</span>,<span style="color: #2aa198;">'Blue'</span>,<span style="color: #2aa198;">'Pink'</span>,<span style="color: #2aa198;">'Black'</span>]
+<pre class="src src-python"><span style="color: #268bd2;">someColours</span>=[<span style="color: #2aa198;">'Red'</span>, <span style="color: #2aa198;">'Blue'</span>, <span style="color: #2aa198;">'Pink'</span>, <span style="color: #2aa198;">'Black'</span>]
 
 <span style="color: #859900; font-weight: bold;">print</span>(someColours[0])
 someColours.append(<span style="color: #2aa198;">'Green'</span>)
@@ -241,11 +241,11 @@ tess.pensize(5)
 <span style="color: #268bd2;">colourList</span>=[<span style="color: #2aa198;">'red'</span>,<span style="color: #2aa198;">'green'</span>,<span style="color: #2aa198;">'blue'</span>,<span style="color: #2aa198;">'orange'</span>,<span style="color: #2aa198;">'hotpink'</span>,<span style="color: #2aa198;">'purple'</span>]
 
 <span style="color: #859900; font-weight: bold;">for</span> eachColour <span style="color: #859900; font-weight: bold;">in</span> colourList:
-    colouredSquare(75,eachColour)  <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Draw a square in the current colour.</span>
+    colouredSquare(75, eachColour)  <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Draw a square in the current colour.</span>
 
     <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">The len() function will tell you how long a list is, or how many characters are in a string.</span>
     <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">I'm using it here to calculate the angle I need, based on the size of the list.</span>
-    tess.left(360/<span style="color: #657b83; font-weight: bold;">len</span>(colourList))
+    tess.left(360 / <span style="color: #657b83; font-weight: bold;">len</span>(colourList))
 
 wn.mainloop()
 </pre>
