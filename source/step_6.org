@@ -83,7 +83,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: research
 :END:
-- You've covered all the basics; you can draw nice patterns, use variables, create functions, use =IF= and design original code. 
+- You've covered all the basics; you can draw nice patterns, use variables, create functions, use IF and design original code. 
 - Programmers don't all know every single command that the languages they use and libraries (like turtle) contain. 
 - They often need to look things up on the web to find out ways to solve new problems. 
 - For instance, it's possible with Python turtle to have the turtle move without drawing a line, so that we can draw things like this:
@@ -113,10 +113,7 @@ for n in range(1,11):
     
 wn.mainloop()
 #+end_src 
-- You can experiment a bit with this Trinket, if that's helpful:
-#+BEGIN_HTML
-<iframe src="https://trinket.io/embed/python/cd17ac4bca" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
+
 - What new ideas are used here? A characteristic of a good developer is being able to apply ideas they've learnt in new situations. Could you use the ideas in the program above to make this pattern (there are 50 turtle stamps here and each is 5 units in front of the one before it), or one like it:
 [[./img/w6_2.png]]
 
@@ -142,19 +139,10 @@ wn.mainloop()
 - A pentagram (the angles will take some thinking about).
 
 [[./img/w6_7.png]]
-- A series of shapes, each with one more side than the last.
-
-[[./img/w6_8.png]]
-- A set of increasingly large squares, each quarter of which is a different colour (clue: The trinket below might be helpful)
-
-[[./img/w6_9.png]]
-- A circle made up of 360 lines, each with a =random= colour.
+- A series of shapes, each with one more side than the last
+- TWO MORE SHAPES TO DO.
 
 
-- You can work in IDLE, or use this Trinket to experiment with:
-#+BEGIN_HTML
-<iframe src="https://trinket.io/embed/python/e0c38a9256" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
 - *Silver:* Create any three patterns
 - *Gold:* Create any five patterns
 - *Platinum:* Create all the patterns
