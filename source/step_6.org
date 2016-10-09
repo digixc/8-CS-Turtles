@@ -126,23 +126,60 @@ wn.mainloop()
 :HTML_CONTAINER_CLASS: learn
 :END:
 - Try and create as many of these patterns as you can for yourself:
+** Challenge 1: Swirly-Whirly
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
 [[./img/w6_3.png]]
 - A 720 degree spiral.
-
+** Challenge 2: Spikey Star
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
 [[./img/w6_4.png]]
 - 20 spikes that are 50 units long
 
+** Challenge 3: Tipsy Turtle
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
 [[./img/w6_5.png]]
-- A 'tipsy' turtle that moves forward at random between 1-5 units, then turns right a random amount between -45 and 45 degrees. You'll need to research and use the *random* library, and the *randrange* function. 
+- A 'tipsy' turtle that moves forward at =random= between 1-5 units, then turns right a random amount between -45 and 45 degrees. You'll need to research and use the *random* library, and the *randrange* function to be able to do this. 
 
+** Challenge 4: Pretty Pentagram
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
 [[./img/w6_6.png]]
 - A pentagram (the angles will take some thinking about).
-
+** Challenge 5: Perplexing Patterns
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
 [[./img/w6_7.png]]
 - A series of shapes, each with one more side than the last
-- TWO MORE SHAPES TO DO.
 
+** Challenge 6: Shrinking Squares
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+[[./img/w6_8.png]]
+- A set of incrementally smaller squares, each a different colour.
 
-- *Silver:* Create any three patterns
-- *Gold:* Create any five patterns
-- *Platinum:* Create all the patterns
+** Challenge 7: Stunning Circle
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+[[./img/w6_9.png]]
+- A circle made from 360 straight lines, each of which is a random colour.
+
+- To help you develop code for your solutions, this trinket may be of some help.
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- *Silver:* Create any *three* patterns
+- *Gold:* Create any *five* patterns
+- *Platinum:* Create *all* the patterns
+- Take a screenshot of each pattern you complete, and upload it along with a text file containing its code it to collect the badge.

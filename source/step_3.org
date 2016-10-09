@@ -114,7 +114,7 @@ Repeat the following 8 times:
 :HTML_CONTAINER_CLASS: code
 :END:
 
-- Start a new Python program, and save it straight away. Call it "**Pattern.py**".
+- Start a new Python program, and save it straight away. Call it =pattern.py=.
 - Start with the usual code to set Python up for drawing graphics...
 
 #+BEGIN_EXAMPLE
@@ -139,10 +139,15 @@ for myMoves in range(8):
 wn.mainloop()
 #+END_EXAMPLE
 
+- Use the code trinket below to experiment with the code a little, but be aware that you'll need to copy and paste your code somewhere else if you want to save it.
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/5ef1bc1b9e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+#+END_HTML
+
 - When you run this, it'll draw the pattern for you. 
-- The def drawsquare(): line and the 3 lines that come after it are where we have declared (created) our function. We've said to Python that any time in the future when we write **drawsquare()**, we want a square drawing. 
-- Change the 8 in the line: **for myMoves in range(8)** to something else.
-- Change the 45 in **tess.left(45)** to something else. 
+- The =def drawsquare():= line and the 3 lines that come after it are where we have declared (created) our function. We've said to Python that any time in the future when we write =drawsquare()=, we want a square drawing. 
+- Change the 8 in the line: =for myMoves in range(8)= to something else.
+- Change the 45 in =tess.left(45)= to something else. 
 - Can you manipulate the code to draw this shape?
 [[./img/pattern2.png]]
 
@@ -160,7 +165,7 @@ wn.mainloop()
     - A pattern with 180 squares would need 2 degrees between each. 
     - Is there a relationship between the two numbers?
 [[./img/pattern3.png]]
-- *Platinum:* You should now have a function for drawing a square, and one for a triangle. Write another function called squiangle() that when called (used) draws a square, then a triangle by calling those functions.
+- *Platinum:* You should now have a function for drawing a square, and one for a triangle. Write another function called =squiangle()= that when called (used) draws a square, then a triangle by calling those functions.
 
 
 - Upload your code to [[https://www.bournetolearn.com][BourneToLearn.com]] 

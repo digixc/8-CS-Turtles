@@ -122,6 +122,12 @@ for myMoves in range(8):
 wn.mainloop()
 #+END_EXAMPLE
 
+- You could use this code window instead, if you wish. Don't forget that any work you do here isn't saved, so you'll need to copy-and-paste out any work you want to keep, so you can save it elsewhere.
+
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/f5fa2137dd" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+#+END_HTML
+
 - By adding sideLength to the first line, we're telling the function that when it runs, it will be provided with a number, which the function will be able to refer to as sideLength.
 - Did you notice that this time, in the line near the bottom of the code that calls the function, we've supplied a number to tell the function how big to draw the square: *drawsquare(50)*
 - In computer science, this is called passing in a *parameter* to the function. When you use print() in Python, you pass in text (a string, as we say). When you use *tess.left(90)*, you're passing in a whole number (an integer) 
@@ -182,6 +188,12 @@ for myMove in range(10):
 
 wn.mainloop()
 #+END_EXAMPLE
+
+- …or use this Python Trinket…
+#+BEGIN_HTML
+<iframe src="https://trinket.io/embed/python/d8c09b6c12" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
+#+END_HTML
+
 - You'll notice now that rather than using drawsquare(), we added the size we wanted inside the brackets instead, as well as the colour we'd like the square to be. This can give us the ability to create more intricate patterns, and eventually to start mixing up the colours.
 
 * Colouring in time
