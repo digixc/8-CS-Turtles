@@ -186,7 +186,7 @@ print("That'll be a " + shape_name + ".")
 
 
 - *Silver:* the user can also choose how thick their lines will be.
-- *Gold:* If the user enters a number below 3 or above 20, they should be told not to be so careless in future before drawing the shape anyway. 
+- *Gold:* If the user enters a number below 3 or above 20, they should be told not to be so careless in future before drawing the shape anyway. Take a look at [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/dataValidation.html][this example]] to see how to check a number within a range. 
 - *Platinum:* Building on the silver task, also change the code so that each new line drawn is thicker than the last, like this:
 [[./img/w2_gold.png]]
 
