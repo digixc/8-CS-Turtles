@@ -234,21 +234,21 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4b7adc9">1. Quiz</a>
+<li><a href="#org4837bf4">1. Quiz</a>
 <ul>
-<li><a href="#org4b9f17f">Quiz It</a></li>
+<li><a href="#org700cde3">Quiz It</a></li>
 </ul>
 </li>
-<li><a href="#orgc4ad579">2. TBA Task:</a>
+<li><a href="#org423f3c0">2. TBA Task:</a>
 <ul>
-<li><a href="#org2afe596">Something It</a></li>
+<li><a href="#orgdf397bf">Something It</a></li>
 </ul>
 </li>
-<li><a href="#orgf7fcb8a">3. Bearly Homework!:</a>
+<li><a href="#orgbd5a1a0">3. Bearly Homework!:</a>
 <ul>
-<li><a href="#org5a4c4e5">Learn It</a></li>
-<li><a href="#orgd58432b">Try It</a></li>
-<li><a href="#orgb577f41">Code It</a></li>
+<li><a href="#org8e760dd">Learn It</a></li>
+<li><a href="#org2d4bc8c">Try It</a></li>
+<li><a href="#org15f7d18">Code It</a></li>
 </ul>
 </li>
 </ul>
@@ -263,13 +263,13 @@ for the JavaScript code in this tag.
 
 </div>
 
-<div id="outline-container-org4b7adc9" class="outline-2 activity">
-<h2 id="org4b7adc9"><span class="section-number-2">1</span> Quiz</h2>
+<div id="outline-container-org4837bf4" class="outline-2 activity">
+<h2 id="org4837bf4"><span class="section-number-2">1</span> Quiz</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org4b9f17f" class="outline-3 learn">
-<h3 id="org4b9f17f">Quiz It</h3>
-<div class="outline-text-3" id="text-org4b9f17f">
+<div id="outline-container-org700cde3" class="outline-3 learn">
+<h3 id="org700cde3">Quiz It</h3>
+<div class="outline-text-3" id="text-org700cde3">
 <ul class="org-ul">
 <li>Time to test your skills.</li>
 <li>Please complete the tasks on the page linked below:</li>
@@ -287,13 +287,13 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgc4ad579" class="outline-2 activity">
-<h2 id="orgc4ad579"><span class="section-number-2">2</span> TBA Task:</h2>
+<div id="outline-container-org423f3c0" class="outline-2 activity">
+<h2 id="org423f3c0"><span class="section-number-2">2</span> TBA Task:</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org2afe596" class="outline-3 learn">
-<h3 id="org2afe596">Something It</h3>
-<div class="outline-text-3" id="text-org2afe596">
+<div id="outline-container-orgdf397bf" class="outline-3 learn">
+<h3 id="orgdf397bf">Something It</h3>
+<div class="outline-text-3" id="text-orgdf397bf">
 <ul class="org-ul">
 <li>Blah blah blah</li>
 </ul>
@@ -301,13 +301,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf7fcb8a" class="outline-2 activity">
-<h2 id="orgf7fcb8a"><span class="section-number-2">3</span> Bearly Homework!:</h2>
+<div id="outline-container-orgbd5a1a0" class="outline-2 activity">
+<h2 id="orgbd5a1a0"><span class="section-number-2">3</span> Bearly Homework!:</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org5a4c4e5" class="outline-3 learn">
-<h3 id="org5a4c4e5">Learn It</h3>
-<div class="outline-text-3" id="text-org5a4c4e5">
+<div id="outline-container-org8e760dd" class="outline-3 learn">
+<h3 id="org8e760dd">Learn It</h3>
+<div class="outline-text-3" id="text-org8e760dd">
 <p>
 <i>I feel like we're going in circles!</i>
 </p>
@@ -323,9 +323,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd58432b" class="outline-3 try">
-<h3 id="orgd58432b">Try It</h3>
-<div class="outline-text-3" id="text-orgd58432b">
+<div id="outline-container-org2d4bc8c" class="outline-3 try">
+<h3 id="org2d4bc8c">Try It</h3>
+<div class="outline-text-3" id="text-org2d4bc8c">
 <p>
 <i>Think it, Trinket!</i>
 </p>
@@ -347,18 +347,22 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen&gt
 </div>
 </div>
 
-<div id="outline-container-orgb577f41" class="outline-3 code">
-<h3 id="orgb577f41">Code It</h3>
-<div class="outline-text-3" id="text-orgb577f41">
+<div id="outline-container-org15f7d18" class="outline-3 code">
+<h3 id="org15f7d18">Code It</h3>
+<div class="outline-text-3" id="text-org15f7d18">
 <ul class="org-ul">
 <li>Now that you've mastered that, how about using this to draw some faces!</li>
 <li>See if you can create a bear face like the one I created below!</li>
 <li>Remember to use the:</li>
+</ul>
 
-<li>Circle function (with radius and extent)</li>
-<li>Triangle function that you made in previous lessons</li>
-<li>The turtle.penup() and turtle.pendown() functions</li>
+<p>
+1 Circle function (with radius and extent)
+2 Triangle function that you made in previous lessons
+3 The turtle.penup() and turtle.pendown() functions
+</p>
 
+<ul class="org-ul">
 <li>Tip: Create a new function called DrawABear(): and put the code in there!</li>
 </ul>
 
