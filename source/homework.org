@@ -76,7 +76,7 @@
 :END:
 
 
-* Quiz
+* Homework 1 - Quiz
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -89,20 +89,7 @@
 http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html
 - Once you have completed the tasks, please save the page as a pdf or screen shot(s) and upload to turtle homework 1 on bourntolearn.com
 
-
-
-
-* TBA Task:
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Something It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: learn
-:END:
-- Blah blah blah
-
-* Bearly Homework!:
+* Homework 2 - Half Moon Rising:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -134,13 +121,30 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 - Remember which direction to face to draw it down
 - Try drawing another small circle in the middle of the bigger ones
 - Remember to use penup() and pendown() to move without drawing a line!
+*** Your homework:
+- The code below gives you some code to draw one half circle
+- You need to define a function called halfMoon()
+- You then need to call the halfMoon function in a loop to create the following pattern.
+
+#+BEGIN_HTML
+<img src="../img/halfMoons.png" width=200 height=180>
+<iframe src="https://trinket.io/embed/python/cfef48097a" style="min-width:900px;" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+
+
+* Homework 3 - Bearly work:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
 
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
 
-- Now that you've mastered that, how about using this to draw some faces!
+- Now that you've mastered the circle function in the previous homework, how about using this to draw some faces!
 - See if you can create a bear face like the one I created below! 
 - Remember to use the: 
 1. Circle function (with radius and extent)
@@ -149,7 +153,7 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 
 - Tip: Create a new function called DrawABear(): and put the code in there!
 
-file:img/BearFace
+[[../img/BearFace.png]]
 
 #+BEGIN_HTML
 <iframe src="https://trinket.io/embed/python/3eba2638d1" width="100%" height="600" 
@@ -159,11 +163,3 @@ frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 - Great! Now we can add some detail!
 - Try adding pupils and an inner part to the bear's ears
 - Remember to use a different colour!
-
-
-
-
-
-
-
-
