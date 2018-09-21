@@ -131,7 +131,7 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 #+END_HTML
 
 - Try editing the code to draw another smaller circle underneath (75)
-- Remember which direction to face to draw it down
+- Remember which direction to face to draw the circle downwards!
 - Try drawing another small circle in the middle of the bigger ones
 - Remember to use penup() and pendown() to move without drawing a line!
 
@@ -143,13 +143,14 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 - Now that you've mastered that, how about using this to draw some faces!
 - See if you can create a bear face like the one I created below! 
 - Remember to use the: 
+
 1. Circle function (with radius and extent)
 2. Triangle function that you made in previous lessons
 3. The turtle.penup() and turtle.pendown() functions
 
 - Tip: Create a new function called DrawABear(): and put the code in there!
 
-file:img/BearFace
+file:img/BearFace.png
 
 #+BEGIN_HTML
 <iframe src="https://trinket.io/embed/python/3eba2638d1" width="100%" height="600" 
