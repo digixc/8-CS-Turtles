@@ -127,7 +127,7 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 - You then need to call the halfMoon function in a loop to create the following pattern.
 
 #+BEGIN_HTML
-<img src="../img/halfMoons.png" width=200 height=180>
+<img src="./img/halfMoons.png" width=200 height=180>
 <iframe src="https://trinket.io/embed/python/cfef48097a" style="min-width:900px;" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 #+END_HTML
 
@@ -153,7 +153,7 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 
 - Tip: Create a new function called DrawABear(): and put the code in there!
 
-[[../img/BearFace.png]]
+[[./img/BearFace.png]]
 
 #+BEGIN_HTML
 <iframe src="https://trinket.io/embed/python/3eba2638d1" width="100%" height="600" 
