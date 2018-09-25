@@ -87,6 +87,7 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<script src="js/navbar.js" type="text/javascript"></script>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 /*
@@ -156,6 +157,21 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
+
+<div id="underlay" onclick="underlayoff()">
+</div>
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 <div class=ribbon>
 <a href="https://github.com/stsb11/turtle">Fork me on GitHub</a>
 </div>
@@ -173,9 +189,9 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">yourName</span>=<span style="color: #2aa198;">'Jane'</span>
-<span style="color: #268bd2;">yourAge</span>=50
-<span style="color: #268bd2;">likeCrisps</span>=<span style="color: #268bd2; font-weight: bold;">True</span>
+<pre class="src src-python">yourName='Jane'
+yourAge=50
+likeCrisps=True
 </pre>
 </div>
 
@@ -187,24 +203,24 @@ for the JavaScript code in this tag.
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #268bd2;">someColours</span>=[<span style="color: #2aa198;">'Red'</span>,<span style="color: #2aa198;">'Blue'</span>,<span style="color: #2aa198;">'Pink'</span>,<span style="color: #2aa198;">'Black'</span>]
+<pre class="src src-python">someColours=['Red','Blue','Pink','Black']
 
-<span style="color: #859900; font-weight: bold;">print</span>(someColours[0])
-someColours.append(<span style="color: #2aa198;">'Green'</span>)
+print(someColours[0])
+someColours.append('Green')
 
-<span style="color: #859900; font-weight: bold;">print</span>(someColours)
+print(someColours)
 
 someColours.sort()
-<span style="color: #859900; font-weight: bold;">print</span>(someColours)
+print(someColours)
 
 someColours.reverse()
-<span style="color: #859900; font-weight: bold;">print</span>(someColours)
+print(someColours)
 
 someColours.pop()
-<span style="color: #859900; font-weight: bold;">print</span>(someColours)
+print(someColours)
 
 someColours.pop(1)
-<span style="color: #859900; font-weight: bold;">print</span>(someColours)
+print(someColours)
 </pre>
 </div>
 
@@ -224,29 +240,29 @@ someColours.pop(1)
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #859900; font-weight: bold;">import</span> turtle
+<pre class="src src-python">import turtle
 
-<span style="color: #268bd2;">wn</span> = turtle.Screen()
-wn.bgcolor(<span style="color: #2aa198;">"white"</span>) 
-wn.title(<span style="color: #2aa198;">"List Practice"</span>)
+wn = turtle.Screen()
+wn.bgcolor("white") 
+wn.title("List Practice")
 
-<span style="color: #268bd2;">tess</span> = turtle.Turtle()
+tess = turtle.Turtle()
 tess.pensize(5)
 
-<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">colouredSquare</span>(sideLength,newColour):
+def colouredSquare(sideLength,newColour):
     tess.color(newColour)
-    <span style="color: #859900; font-weight: bold;">for</span> x <span style="color: #859900; font-weight: bold;">in</span> <span style="color: #657b83; font-weight: bold;">range</span>(4):
-        tess.forward(sideLength)
-        tess.left(90)
+    for x in range(4):
+	tess.forward(sideLength)
+	tess.left(90)
 
-<span style="color: #268bd2;">colourList</span>=[<span style="color: #2aa198;">'red'</span>,<span style="color: #2aa198;">'green'</span>,<span style="color: #2aa198;">'blue'</span>,<span style="color: #2aa198;">'orange'</span>,<span style="color: #2aa198;">'hotpink'</span>,<span style="color: #2aa198;">'purple'</span>]
+colourList=['red','green','blue','orange','hotpink','purple']
 
-<span style="color: #859900; font-weight: bold;">for</span> eachColour <span style="color: #859900; font-weight: bold;">in</span> colourList:
-    colouredSquare(75,eachColour)  <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">Draw a square in the current colour.</span>
+for eachColour in colourList:
+    colouredSquare(75,eachColour)  # Draw a square in the current colour.
 
-    <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">The len() function will tell you how long a list is, or how many characters are in a string.</span>
-    <span style="color: #93a1a1;"># </span><span style="color: #93a1a1;">I'm using it here to calculate the angle I need, based on the size of the list.</span>
-    tess.left(360/<span style="color: #657b83; font-weight: bold;">len</span>(colourList))
+    # The len() function will tell you how long a list is, or how many characters are in a string.
+    # I'm using it here to calculate the angle I need, based on the size of the list.
+    tess.left(360/len(colourList))
 
 wn.mainloop()
 </pre>
