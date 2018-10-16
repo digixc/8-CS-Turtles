@@ -161,7 +161,7 @@ wn.mainloop()
 :HTML_CONTAINER_CLASS: code
 :END:
 [[./img/w6_5.png]]
-- A 'tipsy' turtle that moves forward at =random= between 1-5 units, then turns right a random amount between -45 and 45 degrees. You'll need to research and use the *random* library, and the *randrange* function to be able to do this. See [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/PythonKeySkills.html#sec-1-6][this link]] for a short example.
+- A 'tipsy' turtle that moves forward at =random= between 1-5 units, then turns right a random amount between -45 and 45 degrees. You'll need to research and use the *random* library, and the *randrange* function to be able to do this. See [[https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-6][this link]] for a short example.
 
 ** Challenge 4: Pretty Pentagram
 :PROPERTIES:
