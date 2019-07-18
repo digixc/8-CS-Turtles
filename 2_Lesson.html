@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>End of the unit evaluation</title>
+<title>Loopy Patterns</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -230,19 +230,20 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">End of the unit evaluation</h1>
+<h1 class="title">Loopy Patterns</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgebdcba4">1. Turtle Power - End of Unit Evaluation</a>
+<li><a href="#org8f74061">1. Shell Shock</a>
 <ul>
-<li><a href="#org1eda6bd">Instructions for Writting Your Evaluation</a></li>
-</ul>
-</li>
-<li><a href="#org0255dff">2. Assessment</a>
-<ul>
-<li><a href="#orge9aede2">Badge It</a></li>
+<li><a href="#org35d4656">Try it</a></li>
+<li><a href="#orgc9ef2a1">Explain it</a></li>
+<li><a href="#orgfb9c1be">Learn it</a></li>
+<li><a href="#orgfc6d955">Try it</a></li>
+<li><a href="#org8bb9c13">Learn it</a></li>
+<li><a href="#org65fd031">Try it</a></li>
+<li><a href="#org4f035a2">Badge it</a></li>
 </ul>
 </li>
 </ul>
@@ -283,50 +284,161 @@ for the JavaScript code in this tag.
 <img src='img/turtle.jpg' width=33%>
 </center>
 
-<div id="outline-container-orgebdcba4" class="outline-2 activity">
-<h2 id="orgebdcba4"><span class="section-number-2">1</span> Turtle Power - End of Unit Evaluation</h2>
+<div id="outline-container-org8f74061" class="outline-2 activity">
+<h2 id="org8f74061"><span class="section-number-2">1</span> Shell Shock</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+In the last lesson, you typed commands straight into the Python Shell to create patterns. This is enormously repetitive - it'd be much more convenient if we could instead store sets of instructions as a small program, which we can use to draw with.
+</p>
+</div>
+<div id="outline-container-org35d4656" class="outline-3 build">
+<h3 id="org35d4656">Try it</h3>
+<div class="outline-text-3" id="text-org35d4656">
+<ul class="org-ul">
+<li>In the Python Shell window, click "File -&gt; New", and an empty window will appear.</li>
+<li>In here, copy and paste the following text:</li>
+</ul>
+
+<pre class="example">
+import turtle
+
+wn = turtle.Screen()     # Set up the window and its attributes
+wn.bgcolor("white")      # Choose our background colour. US spelling.
+wn.title("Turtle Power") # Window title
+
+tess = turtle.Turtle()   # Create tess and set some attributes
+tess.color("green")
+tess.pensize(5)
+
+for myMoves in range(4): # Repeat the indended instructions 4 times.
+    tess.forward(100)
+    tess.left(360/4)     # 360 divided by 4 sides is 90...
+
+wn.mainloop()            # Wait until the window is closed.
+</pre>
+
+<ul class="org-ul">
+<li><b><b>Tip:</b></b> Python is fussy about indentation. The two lines after the "for" command both need to be tabbed into the page. This lets Python know what instructions it is repeating, and which it isn't.</li>
+<li>Click File -&gt; Save As, and save this file on your H: Drive, as "<b><b>shapes.py</b></b>".</li>
+<li><b><b>Tip:</b></b> If you call this "turtle.py", your code won't work!</li>
+<li>Run your program by hitting the F5 key on the keyboard, or by choosing Run -&gt; Run Module from the menu at the top of the window.</li>
+</ul>
+</div>
 </div>
 
-<div id="outline-container-org1eda6bd" class="outline-3 try">
-<h3 id="org1eda6bd">Instructions for Writting Your Evaluation</h3>
-<div class="outline-text-3" id="text-org1eda6bd">
+<div id="outline-container-orgc9ef2a1" class="outline-3 learn">
+<h3 id="orgc9ef2a1">Explain it</h3>
+<div class="outline-text-3" id="text-orgc9ef2a1">
 <ul class="org-ul">
-<li>Open new Word document and give your work a title "Turtle Power Evaluation"</li>
-<li>Take a screenshot of your progress ladder graph and the graph below and add them to your document</li>
-<li>Make a a sub-heading for each of the strand for this unit. You can find it in your bournetolearn, Turtle Power unit, as shown below.</li>
+<li>What shape was drawn?</li>
+<li>We only wrote two movement instructions. Why did the computer draw the full shape?</li>
+<li>Can you modify the code to draw a triangle?</li>
+<li>Or a pentagon?</li>
+<li>What if we changed the "range" number to 360, the forward to 2 and the left to 1?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfb9c1be" class="outline-3 learn">
+<h3 id="orgfb9c1be">Learn it</h3>
+<div class="outline-text-3" id="text-orgfb9c1be">
+<ul class="org-ul">
+<li>We could add a little more code to create a program to show custom graphics, by asking the user what they wanted to see.</li>
+<li>Add the following line above your code, so it appears above the "for" line:</li>
+</ul>
+
+<pre class="example">
+howbig=int(input("What size lines would you like? "))
+
+for myMoves in range(3):
+        tess.forward(howbig)
+        tess.left(360/3)    # 360 divided by 3 is 120. 
+</pre>
+
+<ul class="org-ul">
+<li>Run your program by hitting F5.</li>
+<li>This time, the shell asks the user what size sides they'd like (and stores the answer in a variable called howbig), so we can customise the side of our shape.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfc6d955" class="outline-3 code">
+<h3 id="orgfc6d955">Try it</h3>
+<div class="outline-text-3" id="text-orgfc6d955">
+<ul class="org-ul">
+<li>Write code to ask what pen thickness (pensize) the user would like, and set the line to that thickness too.</li>
+<li>Change the code to also ask how many sides the shape should have, and to draw the appropriate shape automatically.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8bb9c13" class="outline-3 learn">
+<h3 id="org8bb9c13">Learn it</h3>
+<div class="outline-text-3" id="text-org8bb9c13">
+<ul class="org-ul">
+<li>It might be a nice bonus if the program could identify what some of the shapes are, by using something called  <b><b>conditionals</b></b>. In Python, we express these using <b><b>IF</b></b> statements.</li>
+
+<li>In our current code, add this above your <b><b>for</b></b> line.</li>
+</ul>
+
+<pre class="example">
+numsides=int(input("How many sides would you like your shape to have (3-20)? "))
+shape_name="shape with many sides"
+
+if numsides==3:
+    shape_name="triangle"
+if numsides==4:
+    shape_name="square"
+
+print("That'll be a " + shape_name + ".")
+</pre>
+
+<ul class="org-ul">
+<li>We start by creating a variable which I called shapename. In it, I stored the words "shape with many sides".</li>
+<li>My plan is to write the words "That's a <b><b>XYZ</b></b> ." on the shell screen before I draw the shape. If I haven't entered the name for a 200 sided shape (for example), then at least the user will be told that they've drawn a shape with many sides.</li>
+<li>I then use a series of <b><b>IF</b></b> statements to try and change the value of shapename to the correct name for the shape.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org65fd031" class="outline-3 code">
+<h3 id="org65fd031">Try it</h3>
+<div class="outline-text-3" id="text-org65fd031">
+<ul class="org-ul">
+<li>Add all the shape names for up to 8 sides.</li>
+<li>In the line, 'for myMoves in range(3):', change the <b>3</b> for <b>numsides</b>.</li>
+<li>In the line, 'tess.left(360/3)', replace the <b>3</b> with <b>numsides</b>.</li>
+<li>Run the program. Use 100 sized lines and 4 sides.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f035a2" class="outline-3 badge">
+<h3 id="org4f035a2">Badge it</h3>
+<div class="outline-text-3" id="text-org4f035a2">
+<ul class="org-ul">
+<li>Modify the program so that&#x2026;</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Silver:</b> the user can also choose how thick their lines will be.</li>
+<li><b>Gold:</b> If the user enters a number below 3 or above 20, they should be told not to be so careless in future before drawing the shape anyway. Take a look at <a href="https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/dataValidation.html">this example</a> to see how to check a number within a range.</li>
+<li><b>Platinum:</b> Building on the silver task, also change the code so that each new line drawn is thicker than the last, like this:</li>
 </ul>
 
 <div class="figure">
-<p><img src="./img/unitLearningStrands.png" alt="unitLearningStrands.png" />
+<p><img src="./img/w2_gold.png" alt="w2_gold.png" />
 </p>
 </div>
 
-<ul class="org-ul">
-<li>Under each heading/learning strand, evaluate the following:c
-<ul class="org-ul">
-<li>What went well (WWW)</li>
-<li>Even better if you &#x2026; (EBI)</li>
-<li>Reflect your work habit - focus, follow notes and instructions, ask questions when stuck et</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-org0255dff" class="outline-2 activity">
-<h2 id="org0255dff"><span class="section-number-2">2</span> Assessment</h2>
-<div class="outline-text-2" id="text-2">
-</div>
 
-<div id="outline-container-orge9aede2" class="outline-3 badge">
-<h3 id="orge9aede2">Badge It</h3>
-<div class="outline-text-3" id="text-orge9aede2">
 <ul class="org-ul">
-<li><b>Bronze</b>:  Evaluated all learning strands of this unit but briefly</li>
-<li><b>Silver</b>: Evaluated all learning strands of this unit with WWW and EBI on all strands</li>
-<li><b>Gold:</b> Evaluated all learning strands with WWW and EBI on all strands with good English</li>
-<li><b>Platinum:</b>  All the above, but self reflection on work ethic</li>
+<li>Upload your code to <a href="https://www.bournetolearn.com">BourneToLearn</a>.</li>
 </ul>
+<p>
+<a href="./index.html">Back to homepage</a>
+</p>
 </div>
 </div>
 </div>

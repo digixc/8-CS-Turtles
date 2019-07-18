@@ -6,11 +6,23 @@
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: Bringing it Together
 #+AUTHOR: Stephen Brown
-
-#+BEGIN_HTML
-
+#+BEGIN_EXPORT html
 <div id="underlay" onclick="underlayoff()">
 </div>
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></>
+      <li><a href="evaluation.html">Evaluation</a></li>
+
+    </ul>
+  </div>
+
 <div id="overlay" onclick="overlayoff()">
 </div>
 <div id=overlayMenu>
@@ -26,7 +38,11 @@
 <div class=ribbon>
 <a href="https://github.com/stsb11/turtle">Fork me on GitHub</a>
 </div>
-#+END_HTML
+<center>
+<img src='img/turtle.jpg' width=33%>
+</center>
+
+#+END_EXPORT
 
 * COMMENT Use as a template
 :PROPERTIES:

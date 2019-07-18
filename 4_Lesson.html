@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>End of the unit evaluation</title>
+<title>Better Functions</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -230,19 +230,21 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">End of the unit evaluation</h1>
+<h1 class="title">Better Functions</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgebdcba4">1. Turtle Power - End of Unit Evaluation</a>
+<li><a href="#orgf36904d">1. More on Functions</a>
 <ul>
-<li><a href="#org1eda6bd">Instructions for Writting Your Evaluation</a></li>
+<li><a href="#org1e437ea">Recap</a></li>
+<li><a href="#orge2c53c7">Parameters 101</a></li>
+<li><a href="#orga2c36bd">More Parameters</a></li>
 </ul>
 </li>
-<li><a href="#org0255dff">2. Assessment</a>
+<li><a href="#org9249e05">2. Colouring in time</a>
 <ul>
-<li><a href="#orge9aede2">Badge It</a></li>
+<li><a href="#org810e6a9">Badge it</a></li>
 </ul>
 </li>
 </ul>
@@ -283,49 +285,171 @@ for the JavaScript code in this tag.
 <img src='img/turtle.jpg' width=33%>
 </center>
 
-<div id="outline-container-orgebdcba4" class="outline-2 activity">
-<h2 id="orgebdcba4"><span class="section-number-2">1</span> Turtle Power - End of Unit Evaluation</h2>
+<div id="outline-container-orgf36904d" class="outline-2 activity">
+<h2 id="orgf36904d"><span class="section-number-2">1</span> More on Functions</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-
-<div id="outline-container-org1eda6bd" class="outline-3 try">
-<h3 id="org1eda6bd">Instructions for Writting Your Evaluation</h3>
-<div class="outline-text-3" id="text-org1eda6bd">
+<div id="outline-container-org1e437ea" class="outline-3 learn">
+<h3 id="org1e437ea">Recap</h3>
+<div class="outline-text-3" id="text-org1e437ea">
 <ul class="org-ul">
-<li>Open new Word document and give your work a title "Turtle Power Evaluation"</li>
-<li>Take a screenshot of your progress ladder graph and the graph below and add them to your document</li>
-<li>Make a a sub-heading for each of the strand for this unit. You can find it in your bournetolearn, Turtle Power unit, as shown below.</li>
+<li>We previously created functions, which performed very specific tasks. Developer often try to make their functions as useful as possible by allowing them to take in different values, and give information back to the part of the program that called them. We'll have a look at this now.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge2c53c7" class="outline-3 learn">
+<h3 id="orge2c53c7">Parameters 101</h3>
+<div class="outline-text-3" id="text-orge2c53c7">
+<ul class="org-ul">
+<li>When we wrote our square function, the code looked like this&#x2026;</li>
 </ul>
 
-<div class="figure">
-<p><img src="./img/unitLearningStrands.png" alt="unitLearningStrands.png" />
+<pre class="example">
+def drawsquare():
+    for x in range(4):
+        tess.forward(100)
+        tess.left(90)
+</pre>
+<ul class="org-ul">
+<li>What if we wanted to be able to choose the size of our square?</li>
+<li>Make a new Python program, and save it as 'functions2.py'.</li>
+<li>Paste this code in:</li>
+</ul>
+
+<pre class="example">
+import turtle
+        
+def drawsquare(sideLength):
+    for x in range(4):
+        tess.forward(sideLength)
+        tess.left(90)
+
+wn = turtle.Screen()
+wn.bgcolor("white") 
+wn.title("Super Func-y")
+
+tess = turtle.Turtle()
+tess.color("hotpink")
+        
+for myMoves in range(8):
+    drawsquare(50)
+    tess.left(45)
+        
+wn.mainloop()
+</pre>
+
+<ul class="org-ul">
+<li>You could use this code window instead, if you wish. Don't forget that any work you do here isn't saved, so you'll need to copy-and-paste out any work you want to keep, so you can save it elsewhere.</li>
+</ul>
+
+<div class="HTML">
+<p>
+&lt;iframe src="<a href="https://trinket.io/embed/python/f5fa2137dd">https://trinket.io/embed/python/f5fa2137dd</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 </p>
+
 </div>
 
 <ul class="org-ul">
-<li>Under each heading/learning strand, evaluate the following:c
+<li>By adding sideLength to the first line, we're telling the function that when it runs, it will be provided with a number, which the function will be able to refer to as sideLength.</li>
+<li>Did you notice that this time, in the line near the bottom of the code that calls the function, we've supplied a number to tell the function how big to draw the square: <b>drawsquare(50)</b></li>
+<li>In computer science, this is called passing in a <b>parameter</b> to the function. When you use print() in Python, you pass in text (a string, as we say). When you use <b>tess.left(90)</b>, you're passing in a whole number (an integer)</li>
+<li>This is handy, as we can now make squares of any size, and make ever nicer patterns. Change your 'for' loop at the bottom of the program from:</li>
+</ul>
+
+<pre class="example">
+for myMoves in range(8):
+    drawsquare(50)
+    tess.left(45)
+</pre>
+
 <ul class="org-ul">
-<li>What went well (WWW)</li>
-<li>Even better if you &#x2026; (EBI)</li>
-<li>Reflect your work habit - focus, follow notes and instructions, ask questions when stuck et</li>
+<li>to&#x2026;</li>
+</ul>
+
+<pre class="example">
+squareSize=50
+for myMoves in range(8):
+    drawsquare(squareSize)
+    squareSize+=10
+    tess.left(45)
+</pre>
+
+<ul class="org-ul">
+<li>Experiment with different ideas. You could&#x2026;
+<ul class="org-ul">
+<li>Make a pattern where there the user chooses the number of steps (I used 8)</li>
+<li>Write a function where the number of sides is a parameter</li>
+<li>Create a function that takes a colour for the shape to be drawn</li>
+<li>Anything else you can dream up!</li>
 </ul></li>
 </ul>
 </div>
 </div>
-</div>
-<div id="outline-container-org0255dff" class="outline-2 activity">
-<h2 id="org0255dff"><span class="section-number-2">2</span> Assessment</h2>
-<div class="outline-text-2" id="text-2">
+
+<div id="outline-container-orga2c36bd" class="outline-3 code">
+<h3 id="orga2c36bd">More Parameters</h3>
+<div class="outline-text-3" id="text-orga2c36bd">
+<ul class="org-ul">
+<li>Passing in one parameter is useful. It's even better if you pass in several. Copy and paste this code into a new, empty program and save it somewhere:</li>
+</ul>
+<pre class="example">
+import turtle
+
+def drawsquare(sideLength,newColour):
+    tess.color(newColour)
+    for x in range(4):
+        tess.forward(sideLength)
+        tess.left(90)
+        
+wn = turtle.Screen()
+wn.bgcolor("white") 
+wn.title("Func-y Town")
+
+tess = turtle.Turtle()
+
+growingSide=50 # The length of the sides we want to use.
+
+for myMove in range(10):
+    if myMove&lt;5:
+         drawsquare(growingSide,"red")  # Draw the square at its new size.
+    else: 
+         drawsquare(growingSide,"blue")  # Let's mix it up.
+    tess.left(36)
+
+    growingSide=growingSide+10 # Increase the value of growingSide by 10.
+
+wn.mainloop()
+</pre>
+
+<ul class="org-ul">
+<li>…or use this Python Trinket…</li>
+</ul>
+<div class="HTML">
+<p>
+&lt;iframe src="<a href="https://trinket.io/embed/python/d8c09b6c12">https://trinket.io/embed/python/d8c09b6c12</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+</p>
+
 </div>
 
-<div id="outline-container-orge9aede2" class="outline-3 badge">
-<h3 id="orge9aede2">Badge It</h3>
-<div class="outline-text-3" id="text-orge9aede2">
 <ul class="org-ul">
-<li><b>Bronze</b>:  Evaluated all learning strands of this unit but briefly</li>
-<li><b>Silver</b>: Evaluated all learning strands of this unit with WWW and EBI on all strands</li>
-<li><b>Gold:</b> Evaluated all learning strands with WWW and EBI on all strands with good English</li>
-<li><b>Platinum:</b>  All the above, but self reflection on work ethic</li>
+<li>You'll notice now that rather than using drawsquare(), we added the size we wanted inside the brackets instead, as well as the colour we'd like the square to be. This can give us the ability to create more intricate patterns, and eventually to start mixing up the colours.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9249e05" class="outline-2 activity">
+<h2 id="org9249e05"><span class="section-number-2">2</span> Colouring in time</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org810e6a9" class="outline-3 badge">
+<h3 id="org810e6a9">Badge it</h3>
+<div class="outline-text-3" id="text-org810e6a9">
+<ul class="org-ul">
+<li>Try coding some of these:</li>
+<li><b>Silver:</b> Modify the code so that it starts with a growingSide of 5, and doubles each time a new square is drawn.</li>
+<li><b>Gold:</b> If you've not done so before, write a function at the top of your code to draw a triangle, and another to draw a pentagon. Make them take at least one parameter to control the length of the sides. Look carefully at the functions for triangles, squares and pentagon. What's the same? What's different? Write a function called "polygon", into which you can pass a side length and number of sides, which then draws any polygon of any size for you. <b>Tip:</b> You might need to look over some of your earlier code to work out how to do the angles!</li>
+<li><b>Platinum:</b> Add an an <b>ultimatePoly()</b> function (you don't need to delete any other functions you've made. They won't run until they're called by you). It should take side length, number of sides, line colour and line thickness. Use it with a loop to make a complex pattern of your own.</li>
 </ul>
 </div>
 </div>

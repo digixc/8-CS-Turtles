@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>End of the unit evaluation</title>
+<title>Funky Functions</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -230,19 +230,16 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">End of the unit evaluation</h1>
+<h1 class="title">Funky Functions</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgebdcba4">1. Turtle Power - End of Unit Evaluation</a>
+<li><a href="#org5c5169c">1. Func-y Town</a>
 <ul>
-<li><a href="#org1eda6bd">Instructions for Writting Your Evaluation</a></li>
-</ul>
-</li>
-<li><a href="#org0255dff">2. Assessment</a>
-<ul>
-<li><a href="#orge9aede2">Badge It</a></li>
+<li><a href="#orge31f0e2">Learn it</a></li>
+<li><a href="#orgbf956c1">Code It</a></li>
+<li><a href="#orgf2249d9">Badge It</a></li>
 </ul>
 </li>
 </ul>
@@ -283,50 +280,178 @@ for the JavaScript code in this tag.
 <img src='img/turtle.jpg' width=33%>
 </center>
 
-<div id="outline-container-orgebdcba4" class="outline-2 activity">
-<h2 id="orgebdcba4"><span class="section-number-2">1</span> Turtle Power - End of Unit Evaluation</h2>
+<div id="outline-container-org5c5169c" class="outline-2 activity">
+<h2 id="org5c5169c"><span class="section-number-2">1</span> Func-y Town</h2>
 <div class="outline-text-2" id="text-1">
-</div>
-
-<div id="outline-container-org1eda6bd" class="outline-3 try">
-<h3 id="org1eda6bd">Instructions for Writting Your Evaluation</h3>
-<div class="outline-text-3" id="text-org1eda6bd">
+<p>
+When developer write code, sometimes their programs need to repeat the same chunks of code over and over again. Programming languages help developers with this by allowing the use of <b><b>Functions</b></b>. 
+</p>
 <ul class="org-ul">
-<li>Open new Word document and give your work a title "Turtle Power Evaluation"</li>
-<li>Take a screenshot of your progress ladder graph and the graph below and add them to your document</li>
-<li>Make a a sub-heading for each of the strand for this unit. You can find it in your bournetolearn, Turtle Power unit, as shown below.</li>
+<li>The definition we use is, "A Function is a piece of code which performs a task, and can return a value".</li>
+<li>Let's look at an example.</li>
+</ul>
+</div>
+<div id="outline-container-orge31f0e2" class="outline-3 learn">
+<h3 id="orge31f0e2">Learn it</h3>
+<div class="outline-text-3" id="text-orge31f0e2">
+<ul class="org-ul">
+<li>I'd like to draw this pattern&#x2026;</li>
 </ul>
 
 <div class="figure">
-<p><img src="./img/unitLearningStrands.png" alt="unitLearningStrands.png" />
+<p><img src="./img/pattern1.png" alt="pattern1.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>In order to do this, I need to start by drawing a square&#x2026;</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern1a.png" alt="pattern1a.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Then rotating the turtle 45 degrees</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern1b.png" alt="pattern1b.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>draw another square&#x2026;</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern1c.png" alt="pattern1c.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Turn another 45 degrees</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern1d.png" alt="pattern1d.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>and again&#x2026;</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern1e.png" alt="pattern1e.png" />
 </p>
 </div>
 
 <ul class="org-ul">
-<li>Under each heading/learning strand, evaluate the following:c
+<li>And so on. If you think about it, what I'm essentially doing is saying</li>
+</ul>
+<pre class="example">
+Repeat the following 8 times:
+    DRAW A SQUARE
+    ROTATE THE TURTLE 45 degrees
+</pre>
+
 <ul class="org-ul">
-<li>What went well (WWW)</li>
-<li>Even better if you &#x2026; (EBI)</li>
-<li>Reflect your work habit - focus, follow notes and instructions, ask questions when stuck et</li>
-</ul></li>
+<li>We can teach the computer how to draw squares (or anything else for that matter) by writing a function which contains the steps needed to perform that task.</li>
+<li>We're going to start by creating a function called drawsquare().</li>
 </ul>
 </div>
-</div>
-</div>
-<div id="outline-container-org0255dff" class="outline-2 activity">
-<h2 id="org0255dff"><span class="section-number-2">2</span> Assessment</h2>
-<div class="outline-text-2" id="text-2">
 </div>
 
-<div id="outline-container-orge9aede2" class="outline-3 badge">
-<h3 id="orge9aede2">Badge It</h3>
-<div class="outline-text-3" id="text-orge9aede2">
+<div id="outline-container-orgbf956c1" class="outline-3 code">
+<h3 id="orgbf956c1">Code It</h3>
+<div class="outline-text-3" id="text-orgbf956c1">
 <ul class="org-ul">
-<li><b>Bronze</b>:  Evaluated all learning strands of this unit but briefly</li>
-<li><b>Silver</b>: Evaluated all learning strands of this unit with WWW and EBI on all strands</li>
-<li><b>Gold:</b> Evaluated all learning strands with WWW and EBI on all strands with good English</li>
-<li><b>Platinum:</b>  All the above, but self reflection on work ethic</li>
+<li>Start a new Python program, and save it straight away. Call it <code>pattern.py</code>.</li>
+<li>Start with the usual code to set Python up for drawing graphics&#x2026;</li>
 </ul>
+
+<pre class="example">
+import turtle
+
+def drawsquare(): # This is a function called drawsquare
+    for myMoves in range(4):
+        tess.forward(100)
+        tess.left(360/4)
+        
+wn = turtle.Screen()
+wn.bgcolor("white") 
+wn.title("Func-y Town")
+
+tess = turtle.Turtle()
+tess.color("hotpink")
+        
+for myMoves in range(8):
+    drawsquare()
+    tess.left(45)
+        
+wn.mainloop()
+</pre>
+
+<ul class="org-ul">
+<li>Use the code trinket below to experiment with the code a little, but be aware that you'll need to copy and paste your code somewhere else if you want to save it.</li>
+</ul>
+<div class="HTML">
+<p>
+&lt;iframe src="<a href="https://trinket.io/embed/python/5ef1bc1b9e">https://trinket.io/embed/python/5ef1bc1b9e</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+</p>
+
+</div>
+
+<ul class="org-ul">
+<li>When you run this, it'll draw the pattern for you.</li>
+<li>The <code>def drawsquare():</code> line and the 3 lines that come after it are where we have declared (created) our function. We've said to Python that any time in the future when we write <code>drawsquare()</code>, we want a square drawing.</li>
+<li>Change the 8 in the line: <code>for myMoves in range(8)</code> to something else.</li>
+<li>Change the 45 in <code>tess.left(45)</code> to something else.</li>
+<li>Can you manipulate the code to draw this shape?</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern2.png" alt="pattern2.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf2249d9" class="outline-3 badge">
+<h3 id="orgf2249d9">Badge It</h3>
+<div class="outline-text-3" id="text-orgf2249d9">
+<ul class="org-ul">
+<li><b>Silver:</b> Create a second function, which draws a triangle when it is called (used).</li>
+<li>Add one line of code to your last program to produce this shape:</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern2a.png" alt="pattern2a.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li><b>Gold:</b> Write a program to make the shape below. It is made from 20 squares.
+<ul class="org-ul">
+<li>What angle will you need in between squares? Here's a hint to get you started:</li>
+<li>A pattern with 4 squares would need 90 degrees between each one.</li>
+<li>A pattern with 8 squares would need 45 degrees between each.</li>
+<li>A pattern with 180 squares would need 2 degrees between each.</li>
+<li>Is there a relationship between the two numbers?</li>
+</ul></li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pattern3.png" alt="pattern3.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li><b>Platinum:</b> You should now have a function for drawing a square, and one for a triangle. Write another function called <code>squiangle()</code> that when called (used) draws a square, then a triangle by calling those functions.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Upload your code to <a href="https://www.bournetolearn.com">BourneToLearn.com</a></li>
+</ul>
+<p>
+<a href="./index.html">Back to homepage</a>
+</p>
 </div>
 </div>
 </div>
