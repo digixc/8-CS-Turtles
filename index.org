@@ -11,32 +11,64 @@
 #+AUTHOR: Stephen Brown
 #+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
+<div id="underlay" onclick="underlayoff()">
+</div>
+
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></>
+      <li><a href="evaluation.html">Evaluation</a></li>
+
+    </ul>
+  </div>
+  
+<div id="overlay" onclick="overlayoff()">
+</div>
+<div id=overlayMenu>
+<p onclick="overlayon('hsla(0, 0%, 50%, 0.5)')">Grey overlay</p>
+<p onclick="underlayon('hsla(300,100%,50%, 0.3)')">Pink</p>
+<p onclick="underlayon('hsla(80, 90%, 40%, 0.4)')">Green</p>
+<p onclick="underlayon('hsla(240,100%,50%,0.2)')">Blue</p>
+<p onclick="underlayon('hsla(40,100%,50%,0.3)')">Cream</p>
+<p onclick="underlayon('hsla(300,100%,40%,0.3)')">Liliac</p>
+<p onclick="underlayon('hsla(300,100%,25%,0.3)')">Purple</p>
+<p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
+</div>
 <div class=ribbon>
 <a href="https://github.com/stsb11/turtle">Fork me on GitHub</a>
 </div>
-#+END_HTML
-* [[file:step_1.html][Lesson 1 - Getting to know you]]
+<center>
+<img src='img/turtle.jpg' width=33%>
+</center>
+
+#+END_EXPORT
+* [[file:1_Lesson.html][Lesson 1 - Getting to know you]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_2.html][Lesson 2 - Loopy Patterns]]
+* [[file:2_Lesson.html][Lesson 2 - Loopy Patterns]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_3.html][Lesson 3 - Getting Func-ky]]
+* [[file:3_Lesson.html][Lesson 3 - Getting Func-ky]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_4.html][Lesson 4 - Better Functions]]
+* [[file:4_Lesson.html][Lesson 4 - Better Functions]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_5.html][Lesson 5 - Being ReLISTic]]
+* [[file:5_Lesson.html][Lesson 5 - Being ReLISTic]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-* [[file:step_6.html][Lesson 6 - Bringing it together]]
+* [[file:6_Lesson.html][Lesson 6 - Bringing it together]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:

@@ -119,6 +119,16 @@ h1 {
   padding: 10px 10px;
   border-radius: 5px;
 }
+/* added to avoid using default link style */
+.activity a:link {
+  color: #FFFFFF;
+}
+.activity a:visited {
+  color: #FFFFFF;
+}
+.activity a:hover {
+  color: #808080;
+}
 .activity img,
 video {
   padding: 5px;
