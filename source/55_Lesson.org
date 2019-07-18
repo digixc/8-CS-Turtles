@@ -8,6 +8,7 @@
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_EXPORT html
+
 <div id="underlay" onclick="underlayoff()">
 </div>
 
@@ -118,16 +119,15 @@
 :HTML_CONTAINER_CLASS: learn
 :END:
 - A standard variable is handy for storing a single piece of information.
-#+BEGIN_EXAMPLE
+#+begin_src python   
 yourName='Jane'
 yourAge=50
 likeCrisps=True
-#+END_EXAMPLE  
-
+#+end_src 
 
 - Sometimes, it's handy to store several pieces of information so that we can access them all when we need them. For this, we use a *list*. 
 - Type these commands in the *INTERPRETER* one at a time to get the hang of manipulating lists:
-#+BEGIN_EXAMPLE
+#+begin_src python   
 someColours=['Red','Blue','Pink','Black']
 
 print(someColours[0])
@@ -183,12 +183,12 @@ for eachColour in colourList:
     tess.left(360/len(colourList))
 
 wn.mainloop()
-#+END_EXAMPLE 
+#+end_src 
 
 - As always, this Trinket may be handy to use to experiment with…
-#+BEGIN_EXPORT html
+#+BEGIN_HTML
 <iframe src="https://trinket.io/embed/python/5b19163d53" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-#+END_EXPORT
+#+END_HTML
 
 * Assessment
 :PROPERTIES:

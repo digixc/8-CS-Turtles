@@ -235,16 +235,15 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org71ca76d">1. More on Functions</a>
+<li><a href="#org2912281">1. Lists</a>
 <ul>
-<li><a href="#org786b40b">Recap</a></li>
-<li><a href="#org2bfc556">Parameters 101</a></li>
-<li><a href="#org208b3ba">More Parameters</a></li>
+<li><a href="#orgc8bbd86">Learn It</a></li>
+<li><a href="#org4805e57">Code It</a></li>
 </ul>
 </li>
-<li><a href="#orgf5bcf8f">2. Colouring in time</a>
+<li><a href="#org5faddfe">2. Assessment</a>
 <ul>
-<li><a href="#org8a65813">Badge it</a></li>
+<li><a href="#org085839f">Badge It</a></li>
 </ul>
 </li>
 </ul>
@@ -285,171 +284,158 @@ for the JavaScript code in this tag.
 <img src='img/turtle.jpg' width=33%>
 </center>
 
-<div id="outline-container-org71ca76d" class="outline-2 activity">
-<h2 id="org71ca76d"><span class="section-number-2">1</span> More on Functions</h2>
+<div id="outline-container-org2912281" class="outline-2 activity">
+<h2 id="org2912281"><span class="section-number-2">1</span> Lists</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org786b40b" class="outline-3 learn">
-<h3 id="org786b40b">Recap</h3>
-<div class="outline-text-3" id="text-org786b40b">
+<div id="outline-container-orgc8bbd86" class="outline-3 learn">
+<h3 id="orgc8bbd86">Learn It</h3>
+<div class="outline-text-3" id="text-orgc8bbd86">
 <ul class="org-ul">
-<li>We previously created functions, which performed very specific tasks. Developer often try to make their functions as useful as possible by allowing them to take in different values, and give information back to the part of the program that called them. We'll have a look at this now.</li>
+<li>A standard variable is handy for storing a single piece of information.</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-org2bfc556" class="outline-3 learn">
-<h3 id="org2bfc556">Parameters 101</h3>
-<div class="outline-text-3" id="text-org2bfc556">
-<ul class="org-ul">
-<li>When we wrote our square function, the code looked like this&#x2026;</li>
-</ul>
-
 <pre class="example">
-def drawsquare():
-    for x in range(4):
-        tess.forward(100)
-        tess.left(90)
-</pre>
-<ul class="org-ul">
-<li>What if we wanted to be able to choose the size of our square?</li>
-<li>Make a new Python program, and save it as 'functions2.py'.</li>
-<li>Paste this code in:</li>
-</ul>
-
-<pre class="example">
-import turtle
-        
-def drawsquare(sideLength):
-    for x in range(4):
-        tess.forward(sideLength)
-        tess.left(90)
-
-wn = turtle.Screen()
-wn.bgcolor("white") 
-wn.title("Super Func-y")
-
-tess = turtle.Turtle()
-tess.color("hotpink")
-        
-for myMoves in range(8):
-    drawsquare(50)
-    tess.left(45)
-        
-wn.mainloop()
+yourName='Jane'
+yourAge=50
+likeCrisps=True
 </pre>
 
-<ul class="org-ul">
-<li>You could use this code window instead, if you wish. Don't forget that any work you do here isn't saved, so you'll need to copy-and-paste out any work you want to keep, so you can save it elsewhere.</li>
-</ul>
 
+<ul class="org-ul">
+<li>Sometimes, it's handy to store several pieces of information so that we can access them all when we need them. For this, we use a <b>list</b>.</li>
+<li>Type these commands in the <b>INTERPRETER</b> one at a time to get the hang of manipulating lists:</li>
+</ul>
+<p>
+#+BEGIN<sub>EXAMPLE</sub>
+someColours=['Red','Blue','Pink','Black']
+</p>
+
+<p>
+print(someColours[0])
+someColours.append('Green')
+</p>
+
+<p>
+print(someColours)
+</p>
+
+<p>
+someColours.sort()
+print(someColours)
+</p>
+
+<p>
+someColours.reverse()
+print(someColours)
+</p>
+
+<p>
+someColours.pop()
+print(someColours)
+</p>
+
+<p>
+someColours.pop(1)
+print(someColours)
+#+end<sub>src</sub> 
+</p>
+
+<ul class="org-ul">
+<li>You can type the commands into this Trinket, if you find it easier…</li>
+</ul>
 <div class="HTML">
 <p>
-&lt;iframe src="<a href="https://trinket.io/embed/python/f5fa2137dd">https://trinket.io/embed/python/f5fa2137dd</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;iframe src="<a href="https://trinket.io/embed/python/b3e5f22215?runOption=console">https://trinket.io/embed/python/b3e5f22215?runOption=console</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 </p>
 
 </div>
-
-<ul class="org-ul">
-<li>By adding sideLength to the first line, we're telling the function that when it runs, it will be provided with a number, which the function will be able to refer to as sideLength.</li>
-<li>Did you notice that this time, in the line near the bottom of the code that calls the function, we've supplied a number to tell the function how big to draw the square: <b>drawsquare(50)</b></li>
-<li>In computer science, this is called passing in a <b>parameter</b> to the function. When you use print() in Python, you pass in text (a string, as we say). When you use <b>tess.left(90)</b>, you're passing in a whole number (an integer)</li>
-<li>This is handy, as we can now make squares of any size, and make ever nicer patterns. Change your 'for' loop at the bottom of the program from:</li>
-</ul>
-
-<pre class="example">
-for myMoves in range(8):
-    drawsquare(50)
-    tess.left(45)
-</pre>
-
-<ul class="org-ul">
-<li>to&#x2026;</li>
-</ul>
-
-<pre class="example">
-squareSize=50
-for myMoves in range(8):
-    drawsquare(squareSize)
-    squareSize+=10
-    tess.left(45)
-</pre>
-
-<ul class="org-ul">
-<li>Experiment with different ideas. You could&#x2026;
-<ul class="org-ul">
-<li>Make a pattern where there the user chooses the number of steps (I used 8)</li>
-<li>Write a function where the number of sides is a parameter</li>
-<li>Create a function that takes a colour for the shape to be drawn</li>
-<li>Anything else you can dream up!</li>
-</ul></li>
-</ul>
 </div>
 </div>
-
-<div id="outline-container-org208b3ba" class="outline-3 code">
-<h3 id="org208b3ba">More Parameters</h3>
-<div class="outline-text-3" id="text-org208b3ba">
+<div id="outline-container-org4805e57" class="outline-3 code">
+<h3 id="org4805e57">Code It</h3>
+<div class="outline-text-3" id="text-org4805e57">
 <ul class="org-ul">
-<li>Passing in one parameter is useful. It's even better if you pass in several. Copy and paste this code into a new, empty program and save it somewhere:</li>
+<li>Using lists, we can get more flexibility over the patterns we can create.</li>
 </ul>
-<pre class="example">
+<p>
+#+begin<sub>src</sub> python   
 import turtle
+</p>
 
-def drawsquare(sideLength,newColour):
+<p>
+wn = turtle.Screen()
+wn.bgcolor("white") 
+wn.title("List Practice")
+</p>
+
+<p>
+tess = turtle.Turtle()
+tess.pensize(5)
+</p>
+
+<p>
+def colouredSquare(sideLength,newColour):
     tess.color(newColour)
     for x in range(4):
         tess.forward(sideLength)
         tess.left(90)
-        
-wn = turtle.Screen()
-wn.bgcolor("white") 
-wn.title("Func-y Town")
-
-tess = turtle.Turtle()
-
-growingSide=50 # The length of the sides we want to use.
-
-for myMove in range(10):
-    if myMove&lt;5:
-         drawsquare(growingSide,"red")  # Draw the square at its new size.
-    else: 
-         drawsquare(growingSide,"blue")  # Let's mix it up.
-    tess.left(36)
-
-    growingSide=growingSide+10 # Increase the value of growingSide by 10.
-
-wn.mainloop()
-</pre>
-
-<ul class="org-ul">
-<li>…or use this Python Trinket…</li>
-</ul>
-<div class="HTML">
-<p>
-&lt;iframe src="<a href="https://trinket.io/embed/python/d8c09b6c12">https://trinket.io/embed/python/d8c09b6c12</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
 </p>
 
-</div>
+<p>
+colourList=['red','green','blue','orange','hotpink','purple']
+</p>
+
+<p>
+for eachColour in colourList:
+    colouredSquare(75,eachColour)  # Draw a square in the current colour.
+</p>
+
+<p>
+tess.left(360/len(colourList))
+</p>
+
+<p>
+wn.mainloop()
+#+END<sub>EXAMPLE</sub> 
+</p>
 
 <ul class="org-ul">
-<li>You'll notice now that rather than using drawsquare(), we added the size we wanted inside the brackets instead, as well as the colour we'd like the square to be. This can give us the ability to create more intricate patterns, and eventually to start mixing up the colours.</li>
+<li>As always, this Trinket may be handy to use to experiment with…</li>
 </ul>
+<iframe src="https://trinket.io/embed/python/5b19163d53" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf5bcf8f" class="outline-2 activity">
-<h2 id="orgf5bcf8f"><span class="section-number-2">2</span> Colouring in time</h2>
+<div id="outline-container-org5faddfe" class="outline-2 activity">
+<h2 id="org5faddfe"><span class="section-number-2">2</span> Assessment</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8a65813" class="outline-3 badge">
-<h3 id="org8a65813">Badge it</h3>
-<div class="outline-text-3" id="text-org8a65813">
+<div id="outline-container-org085839f" class="outline-3 learn">
+<h3 id="org085839f">Badge It</h3>
+<div class="outline-text-3" id="text-org085839f">
 <ul class="org-ul">
-<li>Try coding some of these:</li>
-<li><b>Silver:</b> Modify the code so that it starts with a growingSide of 5, and doubles each time a new square is drawn.</li>
-<li><b>Gold:</b> If you've not done so before, write a function at the top of your code to draw a triangle, and another to draw a pentagon. Make them take at least one parameter to control the length of the sides. Look carefully at the functions for triangles, squares and pentagon. What's the same? What's different? Write a function called "polygon", into which you can pass a side length and number of sides, which then draws any polygon of any size for you. <b>Tip:</b> You might need to look over some of your earlier code to work out how to do the angles!</li>
-<li><b>Platinum:</b> Add an an <b>ultimatePoly()</b> function (you don't need to delete any other functions you've made. They won't run until they're called by you). It should take side length, number of sides, line colour and line thickness. Use it with a loop to make a complex pattern of your own.</li>
+<li><b>Silver:</b> Modify the code to draw the first square with side lengths of 20, the second with size 40, third with 60 and so on.</li>
+<li><b>Gold:</b> Change the code so that the user can enter five colours that are used to draw a pattern of your choice.</li>
+<li><b>Platinum:</b> Change the code so that the user can enter as many colours as they like, and have a shape drawn with that many sides. E.g.</li>
+</ul>
+
+<pre class="example">
+Name a Python colour (XYZ when done): red
+Name a Python colour (XYZ when done): blue
+Name a Python colour (XYZ when done): green
+Name a Python colour (XYZ when done): XYZ
+Here goes...
+</pre>
+
+
+<div class="figure">
+<p><img src="./img/w5.png" alt="w5.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li><i>Tip:</i> You'll need to use a <a href="https://www.bournetocode.com/projects/7-CS-Turing/pages/6_Lesson.html">WHILE</a> loop to make this work.</li>
 </ul>
 </div>
 </div>

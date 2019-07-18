@@ -128,7 +128,9 @@
 :HTML_CONTAINER_CLASS: research
 :END:
 - There are other things you can discover through experimentation...
-#+begin_src python   
+
+#+BEGIN_EXAMPLE
+
 import turtle
 
 wn = turtle.Screen()
@@ -145,7 +147,7 @@ for n in range(1,11):
     tess.left(360/10)
     
 wn.mainloop()
-#+end_src 
+#+END_EXAMPLE
 
 - What new ideas are used here? A characteristic of a good developer is being able to apply ideas they've learnt in new situations. Could you use the ideas in the program above to make this pattern (there are 50 turtle stamps here and each is 5 units in front of the one before it), or one like it:
 [[./img/w6_2.png]]

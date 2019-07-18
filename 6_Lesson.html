@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Better Functions</title>
+<title>Bringing it Together</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -230,21 +230,28 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Better Functions</h1>
+<h1 class="title">Bringing it Together</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org71ca76d">1. More on Functions</a>
+<li><a href="#orgb16f155">1. Turtle Power</a>
 <ul>
-<li><a href="#org786b40b">Recap</a></li>
-<li><a href="#org2bfc556">Parameters 101</a></li>
-<li><a href="#org208b3ba">More Parameters</a></li>
+<li><a href="#orgff171d0">Research It</a></li>
+<li><a href="#org454e31e">Research It</a></li>
 </ul>
 </li>
-<li><a href="#orgf5bcf8f">2. Colouring in time</a>
+<li><a href="#orgff675d0">2. Assessment</a>
 <ul>
-<li><a href="#org8a65813">Badge it</a></li>
+<li><a href="#org2fe253c">Badge It</a></li>
+<li><a href="#orgf30ec91">Challenge 1: Swirly-Whirly</a></li>
+<li><a href="#orge1f78e0">Challenge 2: Spikey Star</a></li>
+<li><a href="#org6f963dc">Challenge 3: Tipsy Turtle</a></li>
+<li><a href="#org5025a54">Challenge 4: Pretty Pentagram</a></li>
+<li><a href="#org0ee2974">Challenge 5: Perplexing Patterns</a></li>
+<li><a href="#orgb0fa628">Challenge 6: Shrinking Squares</a></li>
+<li><a href="#orgd3b361f">Challenge 7: Stunning Circle</a></li>
+<li><a href="#org73b9908">Badge It</a></li>
 </ul>
 </li>
 </ul>
@@ -285,171 +292,187 @@ for the JavaScript code in this tag.
 <img src='img/turtle.jpg' width=33%>
 </center>
 
-<div id="outline-container-org71ca76d" class="outline-2 activity">
-<h2 id="org71ca76d"><span class="section-number-2">1</span> More on Functions</h2>
+<div id="outline-container-orgb16f155" class="outline-2 activity">
+<h2 id="orgb16f155"><span class="section-number-2">1</span> Turtle Power</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org786b40b" class="outline-3 learn">
-<h3 id="org786b40b">Recap</h3>
-<div class="outline-text-3" id="text-org786b40b">
+<div id="outline-container-orgff171d0" class="outline-3 research">
+<h3 id="orgff171d0">Research It</h3>
+<div class="outline-text-3" id="text-orgff171d0">
 <ul class="org-ul">
-<li>We previously created functions, which performed very specific tasks. Developer often try to make their functions as useful as possible by allowing them to take in different values, and give information back to the part of the program that called them. We'll have a look at this now.</li>
+<li>You've covered all the basics; you can draw nice patterns, use variables, create functions, use IF and design original code.</li>
+<li>Programmers don't all know every single command that the languages they use and libraries (like turtle) contain.</li>
+<li>They often need to look things up on the web to find out ways to solve new problems.</li>
+<li>For instance, it's possible with Python turtle to have the turtle move without drawing a line, so that we can draw things like this:</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/w6_1.png" alt="w6_1.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Go online, and see if you can discover how to get the turtle to move without having it's 'pen' down on the screen.</li>
+<li><b>Challenge:</b> See if you can create code to draw the 10-sided shape I made above (with only every other line drawn).</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2bfc556" class="outline-3 learn">
-<h3 id="org2bfc556">Parameters 101</h3>
-<div class="outline-text-3" id="text-org2bfc556">
+<div id="outline-container-org454e31e" class="outline-3 research">
+<h3 id="org454e31e">Research It</h3>
+<div class="outline-text-3" id="text-org454e31e">
 <ul class="org-ul">
-<li>When we wrote our square function, the code looked like this&#x2026;</li>
+<li>There are other things you can discover through experimentation&#x2026;</li>
 </ul>
 
 <pre class="example">
-def drawsquare():
-    for x in range(4):
-        tess.forward(100)
-        tess.left(90)
-</pre>
-<ul class="org-ul">
-<li>What if we wanted to be able to choose the size of our square?</li>
-<li>Make a new Python program, and save it as 'functions2.py'.</li>
-<li>Paste this code in:</li>
-</ul>
 
-<pre class="example">
 import turtle
-        
-def drawsquare(sideLength):
-    for x in range(4):
-        tess.forward(sideLength)
-        tess.left(90)
 
 wn = turtle.Screen()
 wn.bgcolor("white") 
-wn.title("Super Func-y")
+wn.title("Mystery Command")
 
 tess = turtle.Turtle()
-tess.color("hotpink")
-        
-for myMoves in range(8):
-    drawsquare(50)
-    tess.left(45)
-        
+tess.penup()
+
+for n in range(1,11):
+    tess.color('red')
+    tess.stamp()
+    tess.forward(50)  # Draw a square in the current colour.        
+    tess.left(360/10)
+    
 wn.mainloop()
 </pre>
 
 <ul class="org-ul">
-<li>You could use this code window instead, if you wish. Don't forget that any work you do here isn't saved, so you'll need to copy-and-paste out any work you want to keep, so you can save it elsewhere.</li>
+<li>What new ideas are used here? A characteristic of a good developer is being able to apply ideas they've learnt in new situations. Could you use the ideas in the program above to make this pattern (there are 50 turtle stamps here and each is 5 units in front of the one before it), or one like it:</li>
 </ul>
 
-<div class="HTML">
-<p>
-&lt;iframe src="<a href="https://trinket.io/embed/python/f5fa2137dd">https://trinket.io/embed/python/f5fa2137dd</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+<div class="figure">
+<p><img src="./img/w6_2.png" alt="w6_2.png" />
 </p>
-
 </div>
-
-<ul class="org-ul">
-<li>By adding sideLength to the first line, we're telling the function that when it runs, it will be provided with a number, which the function will be able to refer to as sideLength.</li>
-<li>Did you notice that this time, in the line near the bottom of the code that calls the function, we've supplied a number to tell the function how big to draw the square: <b>drawsquare(50)</b></li>
-<li>In computer science, this is called passing in a <b>parameter</b> to the function. When you use print() in Python, you pass in text (a string, as we say). When you use <b>tess.left(90)</b>, you're passing in a whole number (an integer)</li>
-<li>This is handy, as we can now make squares of any size, and make ever nicer patterns. Change your 'for' loop at the bottom of the program from:</li>
-</ul>
-
-<pre class="example">
-for myMoves in range(8):
-    drawsquare(50)
-    tess.left(45)
-</pre>
-
-<ul class="org-ul">
-<li>to&#x2026;</li>
-</ul>
-
-<pre class="example">
-squareSize=50
-for myMoves in range(8):
-    drawsquare(squareSize)
-    squareSize+=10
-    tess.left(45)
-</pre>
-
-<ul class="org-ul">
-<li>Experiment with different ideas. You could&#x2026;
-<ul class="org-ul">
-<li>Make a pattern where there the user chooses the number of steps (I used 8)</li>
-<li>Write a function where the number of sides is a parameter</li>
-<li>Create a function that takes a colour for the shape to be drawn</li>
-<li>Anything else you can dream up!</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org208b3ba" class="outline-3 code">
-<h3 id="org208b3ba">More Parameters</h3>
-<div class="outline-text-3" id="text-org208b3ba">
-<ul class="org-ul">
-<li>Passing in one parameter is useful. It's even better if you pass in several. Copy and paste this code into a new, empty program and save it somewhere:</li>
-</ul>
-<pre class="example">
-import turtle
-
-def drawsquare(sideLength,newColour):
-    tess.color(newColour)
-    for x in range(4):
-        tess.forward(sideLength)
-        tess.left(90)
-        
-wn = turtle.Screen()
-wn.bgcolor("white") 
-wn.title("Func-y Town")
-
-tess = turtle.Turtle()
-
-growingSide=50 # The length of the sides we want to use.
-
-for myMove in range(10):
-    if myMove&lt;5:
-         drawsquare(growingSide,"red")  # Draw the square at its new size.
-    else: 
-         drawsquare(growingSide,"blue")  # Let's mix it up.
-    tess.left(36)
-
-    growingSide=growingSide+10 # Increase the value of growingSide by 10.
-
-wn.mainloop()
-</pre>
-
-<ul class="org-ul">
-<li>…or use this Python Trinket…</li>
-</ul>
-<div class="HTML">
-<p>
-&lt;iframe src="<a href="https://trinket.io/embed/python/d8c09b6c12">https://trinket.io/embed/python/d8c09b6c12</a>" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""&gt;&lt;/iframe&gt;
-</p>
-
-</div>
-
-<ul class="org-ul">
-<li>You'll notice now that rather than using drawsquare(), we added the size we wanted inside the brackets instead, as well as the colour we'd like the square to be. This can give us the ability to create more intricate patterns, and eventually to start mixing up the colours.</li>
-</ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgf5bcf8f" class="outline-2 activity">
-<h2 id="orgf5bcf8f"><span class="section-number-2">2</span> Colouring in time</h2>
+<div id="outline-container-orgff675d0" class="outline-2 activity">
+<h2 id="orgff675d0"><span class="section-number-2">2</span> Assessment</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org8a65813" class="outline-3 badge">
-<h3 id="org8a65813">Badge it</h3>
-<div class="outline-text-3" id="text-org8a65813">
+<div id="outline-container-org2fe253c" class="outline-3 learn">
+<h3 id="org2fe253c">Badge It</h3>
+<div class="outline-text-3" id="text-org2fe253c">
 <ul class="org-ul">
-<li>Try coding some of these:</li>
-<li><b>Silver:</b> Modify the code so that it starts with a growingSide of 5, and doubles each time a new square is drawn.</li>
-<li><b>Gold:</b> If you've not done so before, write a function at the top of your code to draw a triangle, and another to draw a pentagon. Make them take at least one parameter to control the length of the sides. Look carefully at the functions for triangles, squares and pentagon. What's the same? What's different? Write a function called "polygon", into which you can pass a side length and number of sides, which then draws any polygon of any size for you. <b>Tip:</b> You might need to look over some of your earlier code to work out how to do the angles!</li>
-<li><b>Platinum:</b> Add an an <b>ultimatePoly()</b> function (you don't need to delete any other functions you've made. They won't run until they're called by you). It should take side length, number of sides, line colour and line thickness. Use it with a loop to make a complex pattern of your own.</li>
+<li>Try and create as many of these patterns as you can for yourself:</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf30ec91" class="outline-3 code">
+<h3 id="orgf30ec91">Challenge 1: Swirly-Whirly</h3>
+<div class="outline-text-3" id="text-orgf30ec91">
+
+<div class="figure">
+<p><img src="./img/w6_3.png" alt="w6_3.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A 720 degree spiral.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1f78e0" class="outline-3 code">
+<h3 id="orge1f78e0">Challenge 2: Spikey Star</h3>
+<div class="outline-text-3" id="text-orge1f78e0">
+
+<div class="figure">
+<p><img src="./img/w6_4.png" alt="w6_4.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>20 spikes that are 50 units long</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6f963dc" class="outline-3 code">
+<h3 id="org6f963dc">Challenge 3: Tipsy Turtle</h3>
+<div class="outline-text-3" id="text-org6f963dc">
+
+<div class="figure">
+<p><img src="./img/w6_5.png" alt="w6_5.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A 'tipsy' turtle that moves forward at <code>random</code> between 1-5 units, then turns right a random amount between -45 and 45 degrees. You'll need to research and use the <b>random</b> library, and the <b>randrange</b> function to be able to do this. See <a href="https://www.bournetocode.com/projects/CS-PythonKeySkills/pages/1_Part.html#sec-1-6">this link</a> for a short example.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5025a54" class="outline-3 code">
+<h3 id="org5025a54">Challenge 4: Pretty Pentagram</h3>
+<div class="outline-text-3" id="text-org5025a54">
+
+<div class="figure">
+<p><img src="./img/w6_6.png" alt="w6_6.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A pentagram (the angles will take some thinking about).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ee2974" class="outline-3 code">
+<h3 id="org0ee2974">Challenge 5: Perplexing Patterns</h3>
+<div class="outline-text-3" id="text-org0ee2974">
+
+<div class="figure">
+<p><img src="./img/w6_7.png" alt="w6_7.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A series of shapes, each with one more side than the last</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb0fa628" class="outline-3 code">
+<h3 id="orgb0fa628">Challenge 6: Shrinking Squares</h3>
+<div class="outline-text-3" id="text-orgb0fa628">
+
+<div class="figure">
+<p><img src="./img/w6_8.png" alt="w6_8.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A set of incrementally smaller squares, each a different colour.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd3b361f" class="outline-3 code">
+<h3 id="orgd3b361f">Challenge 7: Stunning Circle</h3>
+<div class="outline-text-3" id="text-orgd3b361f">
+
+<div class="figure">
+<p><img src="./img/w6_9.png" alt="w6_9.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A circle made from 360 straight lines, each of which is a random colour.</li>
+
+<li>To help you develop code for your solutions, this trinket may be of some help.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org73b9908" class="outline-3 badge">
+<h3 id="org73b9908">Badge It</h3>
+<div class="outline-text-3" id="text-org73b9908">
+<ul class="org-ul">
+<li><b>Silver:</b> Create any <b>three</b> patterns</li>
+<li><b>Gold:</b> Create any <b>five</b> patterns</li>
+<li><b>Platinum:</b> Create <b>all</b> the patterns</li>
+<li>Take a screenshot of each pattern you complete, and upload it along with a text file containing its code it to collect the badge.</li>
 </ul>
 </div>
 </div>
