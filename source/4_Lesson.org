@@ -165,9 +165,9 @@ wn.mainloop()
 
 - You could use this code window instead, if you wish. Don't forget that any work you do here isn't saved, so you'll need to copy-and-paste out any work you want to keep, so you can save it elsewhere.
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <iframe src="https://trinket.io/embed/python/f5fa2137dd" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-#+END_HTML
+#+END_EXPORT
 
 - By adding sideLength to the first line, we're telling the function that when it runs, it will be provided with a number, which the function will be able to refer to as sideLength.
 - Did you notice that this time, in the line near the bottom of the code that calls the function, we've supplied a number to tell the function how big to draw the square: *drawsquare(50)*
