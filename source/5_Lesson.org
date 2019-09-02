@@ -109,6 +109,14 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing the Programming and Development and Algorithm learning strands, specifically:
+- further developing understanding of repetitions (*loops*) in programming and being able to use *for loops* in creating patterns.
+- further developing understanding of *functions* in programming and being able to create simple functions that serve a single purpose.
+- developing understanding of the need for data structure *list* and being able to apply list data structure.
 * Lists
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -127,6 +135,7 @@ likeCrisps=True
 
 - Sometimes, it's handy to store several pieces of information so that we can access them all when we need them. For this, we use a *list*. 
 - Type these commands in the *INTERPRETER* one at a time to get the hang of manipulating lists:
+
 #+BEGIN_EXAMPLE
 someColours=['Red','Blue','Pink','Black']
 
@@ -146,18 +155,18 @@ print(someColours)
 
 someColours.pop(1)
 print(someColours)
-#+end_src 
+#+end_EXAMPLE
 
 - You can type the commands into this Trinket, if you find it easier…
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <iframe src="https://trinket.io/embed/python/b3e5f22215?runOption=console" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
-#+END_HTML
+#+END_EXPORT
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
 :END:
 - Using lists, we can get more flexibility over the patterns we can create. 
-#+begin_src python   
+#+begin_example  
 import turtle
 
 wn = turtle.Screen()

@@ -108,6 +108,13 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing the Programming and Development and Algorithm learning strands, specifically:
+- further developing skills in using repetition, selection, functions and list to create simple to complex geometrical shapes.
+
 * Turtle Power
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

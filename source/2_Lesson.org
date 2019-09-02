@@ -108,6 +108,13 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing the Programming and Development and Algorithm learning strands, specifically:
+- developing understanding of repetitions (*loops*) in programming and being able to apply in creating simple patterns.
+- developing understanding of selection (*if statement*) in programming and being able to apply to conditionally execute block of code.
 * Shell Shock
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity

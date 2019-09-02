@@ -109,6 +109,13 @@
 :HTML_CONTAINER_CLASS: save
 :END:
 
+* Objectives
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: objectives
+:END:
+** Developing the Programming and Development and Algorithm learning strands, specifically:
+- developing understanding of repetitions (*loops*) in programming and being able to use *for loops* in creating patterns.
+- developing understanding of *functions* in programming and being able to create simple functions that serve a single purpose.
 * Func-y Town
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
