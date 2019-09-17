@@ -5,9 +5,9 @@
 #+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
 #+TITLE: Homework Tasks for the Turtle Topic
-#+AUTHOR: Oliver Drayton
+#+AUTHOR: X Ellis
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 
 <div id="underlay" onclick="underlayoff()">
 </div>
@@ -26,7 +26,7 @@
 <div class=ribbon>
 <a href="https://github.com/stsb11/turtle">Fork me on GitHub</a>
 </div>
-#+END_HTML
+#+END_EXPORT
 
 * COMMENT Use as a template
 :PROPERTIES:
@@ -93,7 +93,7 @@
 :END:
 
 
-* Homework 1 - Quiz
+* Homework 1 - Quiz with If Statement
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
@@ -101,10 +101,21 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Time to test your skills.
-- Please complete the tasks on the page linked below:
-http://interactivepython.org/runestone/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html
-- Once you have completed the tasks, please save the page as a pdf or screen shot(s) and upload to turtle homework 1 on bourntolearn.com
+- Run the code below to see what happens.  Be sure to input your answer on the right bottom window.
+- After running the code, have a look at the code and try to understand how it works.
+- Your homework task:
+  - add another quiz question under the last line of comment (starting with a #)
+  - ask user for an answer and store it in a variable
+  - use another if statement to check if the answer is correct
+  - output appropriate messages depending on the answer is correct or not
+  - test your quiz by answer both questions
+  - screen shot your code and upload to www.bournetolearn.com
+
+#+BEGIN_EXPORT html
+
+<iframe src="https://trinket.io/embed/python/8cee2d344d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+#+END_EXPORT
 
 * Homework 2 - Half Moon Rising:
 :PROPERTIES:
