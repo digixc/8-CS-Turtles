@@ -140,10 +140,10 @@
 :END:
 /Think it, Trinket!/
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <iframe src="https://trinket.io/embed/python/fd97e2dc6b" width="100%" 
 height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 - Try editing the code to draw another smaller circle underneath (75)
 - Remember which direction to face to draw it down
@@ -183,10 +183,10 @@ height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></
 
 [[./img/BearFace.png]]
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <iframe src="https://trinket.io/embed/python/3eba2638d1" width="100%" height="600" 
 frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 - Great! Now we can add some detail!
 - Try adding pupils and an inner part to the bear's ears
