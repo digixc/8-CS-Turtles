@@ -37,7 +37,7 @@
 <p onclick="underlayon('hsla(60,100%,50%,0.3)')">Yellow</p>
 </div>
 <div class=ribbon>
-<a href="https://github.com/stsb11/turtle">Fork me on GitHub</a>
+<a href="https://github.com/digixc/turtle">Fork me on GitHub</a>
 </div>
 <center>
 <img src='img/turtle.jpg' width=33%>
@@ -118,15 +118,13 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Open new Word document and give your work a title "Turtle Power Evaluation"
-- Take a screenshot of your progress ladder graph and the graph below and add them to your document
-- Make a a sub-heading for each of the strand for this unit. You can find it in your bournetolearn, Turtle Power unit, as shown below.
-[[./img/unitLearningStrands.png]]
-
-  - Under each heading/learning strand, evaluate the following:c
+- Right click [[./doc/Turtle%20Power%20%E2%80%93%20End%20of%20unit%20Evaluation.docx][this link]] then *Save Link As* to save this evaluation template into your homedrive.
+- Open the downloaded template in Word.
+- Follow the instructions on the template to finish your self evaluation.
+  - Under each heading/learning strand, evaluate the following:
     - What went well (WWW)
     - Even better if you ... (EBI)
-    - Reflect your work habit - focus, follow notes and instructions, ask questions when stuck et
+   
 * Assessment
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -139,4 +137,4 @@
 - *Bronze*:  Evaluated all learning strands of this unit but briefly
 - *Silver*: Evaluated all learning strands of this unit with WWW and EBI on all strands
 - *Gold:* Evaluated all learning strands with WWW and EBI on all strands with good English
-- *Platinum:*  All the above, but self reflection on work ethic
+- *Platinum:*  All the above, but with realistic self reflection on your own work habit - focus, follow notes and instructions, ask questions when stuck etc
